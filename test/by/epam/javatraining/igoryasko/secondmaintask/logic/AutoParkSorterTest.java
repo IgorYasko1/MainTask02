@@ -4,7 +4,7 @@ import by.epam.javatraining.igoryasko.secondmaintask.model.entity.autopark.AutoP
 import by.epam.javatraining.igoryasko.secondmaintask.model.entity.vehicle.AbstractVehicle;
 import by.epam.javatraining.igoryasko.secondmaintask.model.entity.vehicle.passengervehicle.Car;
 import by.epam.javatraining.igoryasko.secondmaintask.model.logic.AutoParkSorter;
-import by.epam.javatraining.igoryasko.secondmaintask.util.Creator;
+import by.epam.javatraining.igoryasko.secondmaintask.util.creator.Creator;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

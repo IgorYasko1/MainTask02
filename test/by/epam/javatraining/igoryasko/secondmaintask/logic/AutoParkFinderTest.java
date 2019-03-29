@@ -4,7 +4,7 @@ import by.epam.javatraining.igoryasko.secondmaintask.model.entity.autopark.AutoP
 import by.epam.javatraining.igoryasko.secondmaintask.model.entity.vehicle.AbstractVehicle;
 import by.epam.javatraining.igoryasko.secondmaintask.model.entity.vehicle.passengervehicle.Car;
 import by.epam.javatraining.igoryasko.secondmaintask.model.logic.AutoParkFinder;
-import by.epam.javatraining.igoryasko.secondmaintask.util.Creator;
+import by.epam.javatraining.igoryasko.secondmaintask.util.creator.Creator;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -83,9 +83,9 @@ public class AutoParkFinderTest {
 
     @Test
     public void findByPassengersAndPrice() {
-        AbstractVehicle car = new Car(400, 2006, 2);
+        AbstractVehicle car = new Car(400, 2006, 4);
         AbstractVehicle car2 = new Car(100, 2001, 4);
-        AbstractVehicle car3 = new Car(200, 2008, 6);
+        AbstractVehicle car3 = new Car(200, 2008, 4);
         Creator creator = Creator.getInstance();
         AutoPark autoPark = creator.createAutoPark();
         autoPark.add(car);
@@ -97,9 +97,9 @@ public class AutoParkFinderTest {
 
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void findByPassengersAndPriceCheckParameters() {
-        AbstractVehicle car = new Car(400, 2006, 2);
+        AbstractVehicle car = new Car(400, 2006, 4);
         AbstractVehicle car2 = new Car(100, 2001, 4);
-        AbstractVehicle car3 = new Car(200, 2008, 6);
+        AbstractVehicle car3 = new Car(200, 2008, 4);
         Creator creator = Creator.getInstance();
         AutoPark autoPark = creator.createAutoPark();
         autoPark.add(car);

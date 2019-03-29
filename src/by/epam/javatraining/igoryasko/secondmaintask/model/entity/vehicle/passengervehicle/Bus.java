@@ -7,17 +7,17 @@ package by.epam.javatraining.igoryasko.secondmaintask.model.entity.vehicle.passe
  */
 
 public class Bus extends PassengerVehicle {
-    public static final int DEFAULT_TRIP_DISTANCE = 0;
+    public static final int DEFAULT_BAGGAGE = 0;
 
-    private int tripDistance;
+    private int baggage;
 
     public Bus() {
-        tripDistance = DEFAULT_TRIP_DISTANCE;
+        baggage = DEFAULT_BAGGAGE;
     }
 
-    public Bus(double cost, int releaseDate, double amountOfPassenger, int tripDistance) {
+    public Bus(double cost, int releaseDate, int amountOfPassenger, int tripDistance) {
         super(cost, releaseDate, amountOfPassenger);
-        this.tripDistance = tripDistance;
+        this.baggage = tripDistance;
     }
 
     @Override
@@ -25,12 +25,12 @@ public class Bus extends PassengerVehicle {
         return true;
     }
 
-    public int getTripDistance() {
-        return tripDistance;
+    public int getBaggage() {
+        return baggage;
     }
 
-    public void setTripDistance(int tripDistance) {
-        this.tripDistance = tripDistance;
+    public void setBaggage(int baggage) {
+        this.baggage = baggage;
     }
 
     @Override
@@ -41,19 +41,19 @@ public class Bus extends PassengerVehicle {
 
         Bus autobus = (Bus) o;
 
-        return tripDistance == autobus.tripDistance;
+        return baggage == autobus.baggage;
     }
 
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + tripDistance;
+        result = 31 * result + baggage;
         return result;
     }
 
     @Override
     public String toString() {
-        return "Bus: " + "tripDistance=" + tripDistance + super.toString();
+        return "Bus: " + "baggage=" + baggage + super.toString();
     }
 
 }

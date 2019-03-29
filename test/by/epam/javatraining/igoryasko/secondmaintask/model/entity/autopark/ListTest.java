@@ -2,8 +2,6 @@ package by.epam.javatraining.igoryasko.secondmaintask.model.entity.autopark;
 
 import by.epam.javatraining.igoryasko.secondmaintask.model.entity.vehicle.AbstractVehicle;
 import by.epam.javatraining.igoryasko.secondmaintask.model.entity.vehicle.passengervehicle.Car;
-import by.epam.javatraining.igoryasko.secondmaintask.model.logic.AutoParkFinder;
-import by.epam.javatraining.igoryasko.secondmaintask.util.Creator;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

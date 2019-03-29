@@ -18,8 +18,8 @@ public abstract class AbstractVehicle {
         releaseDate = DEFAULT_RELEASE_DATE;
     }
 
-    public AbstractVehicle(double cost, int releaseDate) {
-        this.price = cost;
+    public AbstractVehicle(double price, int releaseDate) {
+        this.price = price;
         this.releaseDate = releaseDate;
     }
 

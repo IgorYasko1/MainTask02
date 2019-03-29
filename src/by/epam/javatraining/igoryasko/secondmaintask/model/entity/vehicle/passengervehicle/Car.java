@@ -9,11 +9,11 @@ public class Car extends PassengerVehicle {
         color = DEFAULT_COLOR;
     }
 
-    public Car(double cost, int releaseDate, double amountOfPassenger) {
+    public Car(double cost, int releaseDate, int amountOfPassenger) {
         super(cost, releaseDate, amountOfPassenger);
     }
 
-    public Car(double cost, int releaseDate, double amountOfPassenger, String color) {
+    public Car(double cost, int releaseDate, int amountOfPassenger, String color) {
         super(cost, releaseDate, amountOfPassenger);
         this.color = color;
     }
