@@ -29,7 +29,7 @@ public class Creator {
         return new Car();
     }
 
-    public Bus createAutobus() {
+    public Bus createBus() {
         return new Bus();
     }
 
