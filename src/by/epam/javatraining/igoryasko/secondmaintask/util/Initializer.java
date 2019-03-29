@@ -59,13 +59,5 @@ public class Initializer {
         ((FreightVehicle)truck).setAmountOfCargo(INITIALIZE_AMOUNT_OF_CARGO);
         ((Truck)truck).setTrailer(INITIALIZE_TRAILER);
     }
-
-    public static void main(String[] args) {
-        Creator creator = Creator.getInstance();
-        Initializer initializer = Initializer.getInstance();
-        System.out.println(initializer);
-        AbstractVehicle car = creator.createCar();
-        System.out.println(car);
-    }
-
+    
 }
