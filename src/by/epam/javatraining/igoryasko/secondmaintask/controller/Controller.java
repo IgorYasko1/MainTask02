@@ -22,10 +22,15 @@ public class Controller {
         Initializer initializer = Initializer.getInstance();
         AutoPark autoPark = creator.createAutoPark();
         AbstractVehicle car = creator.createCar();
+        AbstractVehicle bus = creator.createBus();
+        AbstractVehicle truck = creator.createTruck();
         initializer.initCar(car);
+        initializer.initBus(bus);
+        initializer.initTruck(truck);
         autoPark.add(car);
-        AutoParkSorter.priceSortDescending(autoPark);
-        view.print(car);
+        autoPark.add(bus);
+        autoPark.add(truck);
+        view.print(AutoParkSorter.priceSortDescending(autoPark));
     }
 
 }
