@@ -60,7 +60,7 @@ public class AutoParkFinder {
                 return autoPark.getElement(i);
             }
         }
-        return null;
+        throw new IllegalArgumentException("There is no matches");
     }
 
     public static double minPrice(IAutoPark autoPark) {
