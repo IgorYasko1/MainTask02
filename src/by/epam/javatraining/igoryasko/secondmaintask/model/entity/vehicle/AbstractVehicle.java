@@ -12,6 +12,7 @@ public abstract class AbstractVehicle {
 
     private double price;
     private int releaseDate;
+    private FuelType fuelType;
 
     public AbstractVehicle(){
         price = DEFAULT_PRICE;
@@ -21,6 +22,10 @@ public abstract class AbstractVehicle {
     public AbstractVehicle(double price, int releaseDate) {
         this.price = price;
         this.releaseDate = releaseDate;
+    }
+    
+    public enum FuelType {
+        AI95, AI92, DISEL;
     }
 
     protected abstract boolean isDrive();
